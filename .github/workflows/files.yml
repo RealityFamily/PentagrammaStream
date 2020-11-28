@@ -1,0 +1,18 @@
+name: Cp files
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Cp files
+      run: cp -r * /home/pentagramma/src
