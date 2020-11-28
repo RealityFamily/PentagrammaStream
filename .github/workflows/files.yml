@@ -10,9 +10,9 @@ jobs:
 
   build:
 
-    runs-on: self-hosted
+    runs-on: realityfamily-local-hosted
 
     steps:
     - uses: actions/checkout@v2
     - name: Cp files
-      run: cp -r * /home/pentagramma/src
+      run: cp -r * /home/cbi/pentagramma/src
